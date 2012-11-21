@@ -18,3 +18,7 @@ libraryDependencies ++= Seq(
   "org.slf4j" % "slf4j-api" % "1.6.6",
   "ch.qos.logback" % "logback-classic" % "1.0.6" % "runtime"
 )
+
+EclipseKeys.createSrc := EclipseCreateSrc.Default + EclipseCreateSrc.Resource
+
+EclipseKeys.withSource := true
