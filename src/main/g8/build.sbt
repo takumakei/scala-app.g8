@@ -2,21 +2,21 @@ import AssemblyKeys._
 
 assemblySettings
 
-mainClass := Some("$organization$.Main")
+mainClass     := Some("$organization$.Main")
 
-name := "$name$"
+name          := "$name$"
 
-organization := "$organization$"
+organization  := "$organization$"
 
-version := "$version$"
+version       := "$version$"
 
-jarName in assembly := "$name$-$version$.jar"
-
-scalaVersion := "$scalaVersion$"
+scalaVersion  := "$scalaVersion$"
 
 scalacOptions ++= Seq("-deprecation", "-unchecked")
 
-resolvers += "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
+resolvers     += "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
+
+jarName in assembly := "$name$-$version$.jar"
 
 libraryDependencies ++= Seq(
   "com.github.scala-incubator.io" %% "scala-io-core"   % "0.4.1",
@@ -30,6 +30,6 @@ libraryDependencies ++= Seq(
   "mysql"                    % "mysql-connector-java"  % "5.1.22" % "runtime"
 )
 
-EclipseKeys.createSrc := EclipseCreateSrc.Default + EclipseCreateSrc.Resource
+EclipseKeys.createSrc  := EclipseCreateSrc.Default + EclipseCreateSrc.Resource
 
 EclipseKeys.withSource := true
