@@ -27,6 +27,7 @@ libraryDependencies ++= Seq(
   "io.netty"                       % "netty"           % "3.6.2.Final",
   "org.slf4j"                      % "slf4j-api"       % "1.7.2",
   "ch.qos.logback"                 % "logback-classic" % "1.0.9"  % "runtime",
+  "org.fusesource.jansi"           % "jansi"           % "1.9"    % "runtime",
   "mysql"                    % "mysql-connector-java"  % "5.1.22" % "runtime"
 )
 
